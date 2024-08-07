@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+    justify-content: center;
+}
+.app {
+  padding:20px;
+    min-width: 310px;
+    max-width: 800px;
+    width: 100%;
+}
+a{
+  text-decoration: inherit;
+  color: inherit;
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a {
+  color: white;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar .active {
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-container {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container h2 {
+  margin-bottom: 1rem;
+}
+
+.auth-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.auth-container input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-container button:hover {
+  background-color: darkblue;
 }
