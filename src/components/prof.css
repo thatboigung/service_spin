@@ -1,0 +1,96 @@
+.prof-pic{
+    font-size: 80px;
+    
+}
+
+.top-bar span{
+    cursor: pointer;
+}
+.Profile-user{
+    display: flex;
+    gap: 20px;
+}
+.Profile-user .edit{
+    border-radius: 62px;
+    padding: 12px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-weight: 600;
+}
+.Profile-user .edit span{
+    color: blue;
+}
+.prof-nav{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.prof-nav div{
+    border-radius: 32px;
+    padding: 6px 10px;
+    background-color: rgba(187, 187, 187, 0.308);
+    cursor: pointer;
+}
+.prof-nav .active{
+    background-color: rgba(148, 148, 248, 0.514);
+    color: white;
+}
+.create-btn{
+    margin-top: 20px;
+    border-radius: 32px;
+    padding:  10px;
+    background-color: hsl(261, 98%, 64%);
+    text-align: center;
+    color: white;
+}
+.crtSvc-container{
+    display: flex;
+    justify-content: center;
+}
+.create-service{
+    padding: 20px;
+}
+.cover-photo-service{
+    height: 300px;
+    width: 500px;
+    background-color: rgba(170, 169, 169, 0.315);
+    border-radius: 6px;
+    margin: 15px;
+}
+.cover-photo-service p{
+    position: relative;
+    top: 120px;
+    left: 90px;
+    background-color: rgba(128, 128, 128, 0.363);
+    padding: 6px;
+    border-radius: 6px;
+    width: fit-content;
+}
+.create-service select , .create-service input , .create-service textarea{
+    margin-top: 10px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid gray;
+}
+.create-service h3{
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.create-service button{
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(64, 64, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}

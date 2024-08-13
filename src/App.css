@@ -14,6 +14,7 @@ body {
     min-width: 310px;
     max-width: 800px;
     width: 100%;
+    padding-bottom: 100px;
 }
 a{
   text-decoration: inherit;
@@ -73,4 +74,59 @@ a{
 
 .auth-container button:hover {
   background-color: darkblue;
+}
+.listings{
+  padding: 12px;
+  
+}
+.listing{
+  display: flex;
+  margin-top: 10px;
+}
+.listing .listing-cover{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.384);
+}
+.listig-details{
+  padding:0 10px ;
+  position: relative;
+
+}
+.listig-details p, .listig-details h2{
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+.listig-details small{
+  color: gray;
+}
+
+.listig-details .loc{
+  font-size: 14px;
+  color: rgb(53, 49, 250);
+}
+.top-bar{
+  position: sticky;
+  top: 0;
+  font-size: 25px;
+  padding: 12px;
+  background-color: #fff;
+  text-align: right;
+  z-index: 100;
+  display: flex;
+}
+.profile-user{
+  display: flex;
+  gap: 10px;
+}
+.profile-user .user-img{
+  font-size: 50px;
+}
+.profile-user p{
+  position: relative;
+  font-weight: 600    ;
+  
+  font-size: 16px;
 }

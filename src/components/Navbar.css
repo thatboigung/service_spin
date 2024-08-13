@@ -4,6 +4,10 @@
    min-width: 310px;
    max-width: 900px;
    width: 100%;
+   background-color: #fff;
+   font-size: 20px;
+   margin-left: -20px;
+   color: gray;
   }
   .navbar-nav ul{
    display: grid;

@@ -7,14 +7,72 @@
     max-width: 800px;
     width: 100%;
 }
-.profile-user{
-    display: flex;
-    gap: 10px;
+
+.search-input{
+    border-radius: 63px;
+    border: 1px solid gray;
+    padding:6px;
 }
-.profile-user .user-img{
-    font-size: 50px;
+.search-input input{
+    border: none;
+    font-size: 20px;
+    outline: none;
+    width: 90%;
 }
-.profile-user p{
+.search-input span{
+    font-size: 25px;
+    color: gray;
     position: relative;
-    font-weight: 600    ;
+    top: 5px;
+}
+.services-container{
+ text-align: center;
+ margin-top: 40px;
+}
+ .services{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+ .services div{
+    height: 200px;
+    border-radius: 12px;
+    background-color: rgba(165, 164, 164, 0.233);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.services-container button{
+    padding: 6px;
+    border-radius: 62px;
+    width: 100%;
+    background-color: blue;
+    color:white;    
+       cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.icon{
+    width: 100%;
+    font-size: 50px;
+    position: relative;
+    text-align: right;
+
+}
+.services img{
+    height: 200px;
+    width: 100%;
+}
+.services h2{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.past-bkings{
+    padding: 10px;
+    background-color: rgb(179, 178, 178);
+    border-radius: 6px;
+    margin-top: 20px;
+    min-height: 300px;
+    text-align: left;
 }
