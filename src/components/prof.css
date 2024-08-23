@@ -21,17 +21,18 @@
     color: blue;
 }
 .prof-nav{
-    display: flex;
-    gap: 20px;
-    text-align: center;
     margin-top: 30px;
     font-weight: 600;
 }
 .prof-nav div{
-    border-radius: 32px;
+    border-radius: 6px;
     padding: 6px 10px;
-    background-color: rgba(187, 187, 187, 0.308);
+    background-color: rgba(219, 218, 218, 0.151);
     cursor: pointer;
+    margin-bottom: 10px;
+}
+.prof-nav h2{
+    font-size: 16px;
 }
 .prof-nav .active{
     background-color: rgba(148, 148, 248, 0.514);
@@ -51,30 +52,65 @@
 }
 .create-service{
     padding: 20px;
+
+width: 100%;
+}
+
+.uploaded{
+    height: 140px;
+    width: 140px;
+    background-color: #b8b5b577;
+    border-radius: 50%;
+}
+.uploaded img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.uploaded label{
+    position: relative;
+    left: 5px;
+    top: 60px;
+    height: 80px;
+    width: 80px;
+    padding: 60px;
+    
+}
+.uploaded input{
+    display: none;
+}
+.upload-done{
+    position: relative;
+    top: 10px;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    width: fit-content  ;
+    padding: 6px;
+    cursor: pointer;
 }
 .cover-photo-service{
-    height: 300px;
-    width: 500px;
-    background-color: rgba(170, 169, 169, 0.315);
-    border-radius: 6px;
-    margin: 15px;
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
 }
-.cover-photo-service p{
+.cover-photo-service h3{
     position: relative;
-    top: 120px;
-    left: 90px;
-    background-color: rgba(128, 128, 128, 0.363);
-    padding: 6px;
-    border-radius: 6px;
-    width: fit-content;
+    top: 10px;
+    font-size: 16px;
 }
 .create-service select , .create-service input , .create-service textarea{
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 6px;
     width: 100%;
     font-size: 20px;
     outline: none;
+    width: 100%;
     border: 1px solid gray;
+    padding: 6px;
 }
 .create-service h3{
     padding: 0;
@@ -90,7 +126,11 @@
     color: white;
     font-size: 20px;
     font-weight: 600;
-    width: 100%;
     padding: 10px;
     cursor: pointer;
+
+}
+.btn-done{
+    display: flex;
+    justify-content: right;
 }

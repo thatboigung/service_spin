@@ -7,14 +7,14 @@ body {
 }
 .container{
   display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 .app {
   padding:20px;
     min-width: 310px;
     max-width: 800px;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 a{
   text-decoration: inherit;
@@ -39,6 +39,64 @@ a{
   font-weight: bold;
 }
 
+.side-bar{
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  z-index: 100;
+  right: -250px; /* Initially hidden off-screen */
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+ right: -800px;
+ text-align: left;
+ transition: right 0.3s ease-in-out;
+}
+.active-sidebar{
+right: 0px;
+}
+.menu-icon{
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+.menu-iconn{
+  padding: 10px ;
+  position: absolute;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.322);
+  cursor: pointer;
+}
+.side-bar .user-p{
+   text-align: center;
+  font-size: 80px;  
+}
+.side-bar .user-p h3{
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+.sidebar-items div{
+  padding: 6px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar-items p{
+ margin: 0;
+ font-size: 20px;
+}
+.sidebar-items b{
+  font-weight: 500;
+}
+.sidebar-items small{
+  color: gray;
+}
 .auth-container {
   max-width: 300px;
   margin: 2rem auto;
@@ -79,9 +137,23 @@ a{
   padding: 12px;
   
 }
+.viewer-listing{
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
 .listing{
   display: flex;
   margin-top: 10px;
+  gap: 10px;
+}
+.listing h2 , .listing p{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.listing .loc{
+  color: gray;
+  font-size: 14px;
 }
 .listing .listing-cover{
   height: 80px;
@@ -89,23 +161,100 @@ a{
   border-radius: 50%;
   background-color: rgba(128, 128, 128, 0.384);
 }
+.listing img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .listig-details{
   padding:0 10px ;
   position: relative;
 
 }
-.listig-details p, .listig-details h2{
+.listig-details p, .listig-details h2 , .listig-details h3{
   padding: 0;
   margin: 0;
   margin-top: 5px;
 }
+.listing-details p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(39, 39, 39);
+}
 .listig-details small{
   color: gray;
 }
+.reveals{
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 20px;
+  min-height: 300px;
+  text-align: left;
 
+}
+li{
+  list-style: none;
+}
+.addReveal{
+  display: flex;
+  gap: 10px;
+  font-size: 50px;
+}
+.addReveal .textarea{
+  width: 100%;
+}
+.addReveal textarea{
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 6px;
+  max-width: 100%;
+}
+.chat{
+  display: flex ;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 66px;
+  border: 1px solid gray;
+
+}
+.chat input{
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+.chat button{
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+}
 .listig-details .loc{
   font-size: 14px;
   color: rgb(53, 49, 250);
+}
+ .book-btn{
+  position: relative;
+top: 30px;
+text-align: right;
+right: 20px;
+flex: 1;
+ }
+.book-btn  span{
+  color: white ;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+  background-color: blue;
 }
 .top-bar{
   position: sticky;
@@ -116,6 +265,12 @@ a{
   text-align: right;
   z-index: 100;
   display: flex;
+}
+.top-bar h4{
+  padding: 0;
+  margin: 0;
+  color: rgb(6, 6, 129);
+ 
 }
 .profile-user{
   display: flex;
