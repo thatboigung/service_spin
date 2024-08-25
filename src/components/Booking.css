@@ -11,13 +11,14 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+  
   }
   
   .booking-content {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
@@ -27,17 +28,31 @@
   }
   
   .booking-content textarea {
-    width: 100%;
+    width: 98%;
     height: 100px;
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    resize: none;
+    font-size: 20px;
+  }
+  .booking-content input{
+    width: 98%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 20px;
+  }
+  .booking-content button{
+    font-size: 20px;
   }
   
   .booking-content button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,7 +60,7 @@
   }
   
   .booking-content button.close-btn {
-    background-color: #f44336;
+    background-color: gray;
     margin-left: 10px;
   }
   

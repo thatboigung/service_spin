@@ -38,10 +38,18 @@ const Profile = () => {
 
   return (
     <div>
+       <div className='navbar-prof'>
+        <ul>
+          <li className='active'>Info</li>
+          <li>Oders</li>
+          <li>Reaveals</li>
+          <li>Inbox</li>
+        </ul>
+      </div>
       <div className='Profile-user'>
         <div className='prof-pic'>
           {user.profilePic ? (
-            <img src={`http://localhost/serviceSpinBackend/${user.profilePic}`} alt="Profile" />
+            <img src={`http://localhost/serviceSpinBackend/profilePics/${user.profilePic}`} alt="Profile" />
           ) : (
             <FaUserCircle />
           )}
@@ -51,6 +59,7 @@ const Profile = () => {
           <NavLink to="edit-prof"><div className='edit'><span><MdEdit /></span> Edit Profile </div></NavLink>
         </div>
       </div>
+     
 
       <div className='prof-nav'>
         <div>

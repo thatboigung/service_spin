@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './Booking.css'; // Ensure this file styles the popup accordingly
+import './Booking.css';
 
-const Booking = ({ providerId, clientName, onClose }) => {
+const Booking = ({ providerId, clientId, onClose }) => {
   const [issue, setIssue] = useState("");
+  const [location, setLocation]=useState("");
   const [loading, setLoading] = useState(false);
 
   const handleBooking = async () => {
@@ -15,9 +16,10 @@ const Booking = ({ providerId, clientName, onClose }) => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            client_name: clientName,
+            clientId: clientId,
             service_provider_id: providerId,
             issue_description: issue,
+            location:location,
           }),
         });
 
@@ -42,11 +44,18 @@ const Booking = ({ providerId, clientName, onClose }) => {
     <div className="booking-popup">
       <div className="booking-content">
         <h3>Book a Consultancy with Provider {providerId}</h3>
+         
+        <div>
         <textarea
           placeholder="Describe your issue..."
           value={issue}
           onChange={(e) => setIssue(e.target.value)}
         />
+        </div>
+        <div>
+          <input placeholder='Your Location' onChange={(e) => setLocation(e.target.value)} />
+        </div>
+       
         <button onClick={handleBooking} disabled={loading}>
           {loading ? 'Booking...' : 'Book'}
         </button>

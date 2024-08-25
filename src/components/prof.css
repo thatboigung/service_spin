@@ -1,8 +1,25 @@
 .prof-pic{
     font-size: 80px;
-    
 }
-
+.prof-pic img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar-prof ul{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+.navbar-prof li{
+    cursor: pointer;
+}
+.navbar-prof .active{
+    color: rgb(74, 74, 250);
+    text-decoration: underline;
+}
 .top-bar span{
     cursor: pointer;
 }
@@ -22,12 +39,11 @@
 }
 .prof-nav{
     margin-top: 30px;
-    font-weight: 600;
 }
 .prof-nav div{
     border-radius: 6px;
     padding: 6px 10px;
-    background-color: rgba(219, 218, 218, 0.151);
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     margin-bottom: 10px;
 }

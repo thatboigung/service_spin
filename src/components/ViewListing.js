@@ -7,6 +7,7 @@ import { FaUserCircle } from "react-icons/fa";
 
 const ViewListing = () => {
   const location = useLocation(); 
+  const user_id = localStorage.getItem('userId');
   const { provider } = location.state || {}; 
 
   const [isBookingOpen, setIsBookingOpen] = useState(false); // State to manage popup visibility
@@ -72,7 +73,8 @@ const ViewListing = () => {
       {/* Render the Booking component as a popup */}
       {isBookingOpen && (
         <Booking 
-          providerName={provider.userName} 
+          providerId={provider.user_id} 
+          clientId={user_id}
           onClose={() => setIsBookingOpen(false)} 
         />
       )}

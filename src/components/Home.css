@@ -61,18 +61,59 @@
 }
 .services img{
     height: 200px;
+    border-radius: 6px;
     width: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
 }
 .services h2{
     position: absolute;
     margin-top: 50px;
     margin-left: 20px;
+    z-index: 100;
+    color: aliceblue;
 }
 .past-bkings{
     padding: 10px;
-    background-color: rgba(179, 178, 178, 0.397);
+    
     border-radius: 6px;
     margin-top: 20px;
     min-height: 300px;
     text-align: left;
+}
+
+.past-bkings .listing-details{
+    width: 80%;
+}
+.past-bkings .accept div{
+    position: a;
+}
+.past-bkings p{
+    width: 100%;
+}
+.past-bkings .accept .acceptBtn{
+      background-color: blue;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.past-bkings .listing-cover{
+    font-size: 40px;
+}
+.past-bkings .cancel{
+    background-color: rgba(128, 128, 128, 0.363);
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.past-bkings h2{
+    font-size: 16px;
 }
