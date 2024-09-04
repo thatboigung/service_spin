@@ -120,7 +120,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <NavLink to="/listings">
+            <NavLink to="/listings"  >
               <button><FaPlus /> More Services</button>
             </NavLink>
           </div>
@@ -128,7 +128,7 @@ const Home = () => {
             <h3>Bookings</h3>
 
             {bookings.length > 0 ? (
-              bookings.map((booking) => (
+              bookings.map((booking, index) => (
                 <div key={booking.id} className='listing'>
                   <div className='listing-cover'>
                     <FaUserCircle />
@@ -149,7 +149,9 @@ const Home = () => {
                       )}
                       {booking.status === 'Accepted' && (
                         <>
+                        <NavLink to={`/chat/${booking.id}`} key={index}    state={{ booking }}>
                           <span onClick={() => handleChat(booking)} className='acceptBtn'>Chat</span>
+                        </NavLink>
                           <span onClick={() => handleCloseDeal(booking.id)} className='cancel'>Close</span>
                         </>
                       )}

@@ -1,5 +1,5 @@
 .auth-container {
-    max-width: 300px;
+    max-width: 500px;
     margin: 2rem auto;
     padding: 1rem;
     border: 1px solid #ccc;
@@ -44,4 +44,21 @@
     color: blue;
     text-decoration: none;
   }
+  .auth-container p{
+    color: rgb(90, 89, 89);
+  }
+  .auth-container .auths{
+    padding: 10px;
+  }
+  .auth-container .auths div{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 2px 0px gray;
+    cursor: pointer;
+  }
+
   

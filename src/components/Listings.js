@@ -36,7 +36,7 @@ const Listings = () => {
           <NavLink 
             to={`/listing/${provider.id}`} 
             key={index} 
-            state={{ provider }} // Pass provider data as state
+            state={{ provider }}
           >
             <div className='listing'>
               <div className='listing-cover'>

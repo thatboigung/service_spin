@@ -1,0 +1,69 @@
+.chat-page .topbar{
+    padding: 10px;
+    font-size: 20px;
+}
+.chat-page .chat{
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    margin-left: -20px;
+    max-width: 800px;
+    border-radius: 0;
+    background-color: #fff;
+}
+.chat-page .chat textarea{
+font-size: 20px;
+width: 97%;
+max-width: 97%;
+resize: none;
+border: none;
+position: relative;
+top: -10px;
+padding:  10px;
+height: 35px;
+border-bottom: 1px solid gray;
+}
+.chat-input{
+width: 100%;
+max-width: 700px;
+}
+.chat span{
+    font-size: 20px;
+    cursor: pointer;
+}
+.chat-page .listing .listing-cover{
+    font-size: 30px;
+}
+.chat-page .listing-details small{
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.chat-page .listing-details p{
+    background-color: rgba(156, 252, 156, 0.575);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.chat-page h3{
+    padding: 0;
+    margin: 0;
+}
+.chat-page .chat-menu{
+    padding: 10px;
+    position: absolute;
+    bottom: 120px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px gray;
+    border-radius: 6px;
+    
+}
+.chat-page .chat-menu div{
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.active-chat_menu{
+   display: none;
+}

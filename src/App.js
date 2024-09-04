@@ -56,7 +56,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/listings" element={<Listings />} />
                 <Route path="/listing/:id" element={<ViewListing />} />
-                <Route path="/chat" element={<Chat />} />
+                <Route path="/chat/:id" element={<Chat />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/edit-prof" element={<EditProfile />} />
                 <Route path="/create" element={<CreateService />} />
